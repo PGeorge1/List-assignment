@@ -15,7 +15,7 @@ public:
   {
   }
   
-  /*Inserts node with input value after specified position*/
+  /*Inserts node with input value to specified position*/
   Node<T> *insert (T value, int pos) 
   {
   }
