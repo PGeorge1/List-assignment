@@ -1,51 +1,63 @@
-#include "node.h"
-
 template <typename T>
 class LinkedList
 {
   Node<T> *m_begin;
-
+  Node<T> *m_back;
 
   int m_size = 0;
 public:
   LinkedList ()
   {
   }
+
+  class iterator
+  {
+  };
+
+  LinkedList<T>::iterator begin()
+  {
+  }
+
+  LinkedList<T>::iterator end()
+  {
+  }
+
+  T &operator[] (int pos)
+  {
+  }
+
+  const T &operator[] (int pos) const
+  {
+  }
+
   int size ()
   {
   }
-  
-  /*Inserts node with input value to specified position*/
-  Node<T> *insert (T value, int pos) 
+
+  LinkedList<T>::iterator insert (T value, int pos)
   {
   }
 
-  /*Inserts node with input value in the end of the list */
-  Node<T> *push_back (T value)
-  {
-  }
-  
-  /*Finds first node from the begin with given value*/
-  Node<T> *find (T value)
-  {
-  }
-  
-  /*removes input node*/
-  void remove (Node<T> *node)
+  LinkedList<T>::iterator push_back (T value)
   {
   }
 
-  /*Reverses the list*/
+  LinkedList<T>::iterator find (T value)
+  {
+  }
+
+  void remove (LinkedList<T>::iterator it)
+  {
+  }
+
   void reverse ()
   {
   }
-  
-  /*Clears the list*/
+
   void clear ()
   {
   }
-  
-  /*Prints list to stdout*/
+
   void print_list ()
   {
   }
